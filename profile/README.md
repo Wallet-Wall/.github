@@ -90,6 +90,19 @@ flowchart LR
 
 ---
 
+## Operating principles
+
+> [!IMPORTANT]
+> WalletWall is non-custodial by design. Wallet analysis should never require seed phrases, private keys, or unsafe signatures.
+
+> [!NOTE]
+> Public research and product surfaces are separated. Vault and verifier work should be treated as research unless explicitly marked otherwise.
+
+> [!TIP]
+> Coinstellation is the discovery layer. Wallet-level context should resolve into Whale Watcher, Stable Seer, or Quantum Intelligence depending on the source context.
+
+---
+
 ## Product surfaces
 
 | Surface                  | Focus                                                                                       |
@@ -123,6 +136,9 @@ The work focuses on:
 * verifier and attestation boundaries
 * research-to-product separation
 
+> [!NOTE]
+> WalletWall research focuses on wallet-level exposure, readiness signals, and migration-path design. It does not claim that any specific wallet is compromised.
+
 The research is not financial advice, custody infrastructure, or a claim that any specific wallet is compromised. It is a framework for understanding public wallet exposure and preparing safer migration paths.
 
 ---
@@ -135,6 +151,9 @@ The research is not financial advice, custody infrastructure, or a claim that an
 | **Secrets**           | WalletWall does not request seed phrases or private keys.                                              |
 | **Signing**           | WalletWall does not require unsafe transaction signing for wallet analysis.                            |
 | **Research boundary** | Experimental vault and verifier work should be treated as research unless explicitly marked otherwise. |
+
+> [!IMPORTANT]
+> WalletWall does not request seed phrases, private keys, or unsafe wallet signatures for analysis.
 
 ---
 
@@ -154,5 +173,8 @@ The research is not financial advice, custody infrastructure, or a claim that an
 WalletWall is in active development.
 
 Public repositories may represent research, prototypes, or standalone product surfaces while the main application continues to evolve.
+
+> [!TIP]
+> Public repositories may represent research, prototypes, or standalone product surfaces while the main application continues to evolve.
 
 <sub>WalletWall is a non-custodial intelligence and research project. Public materials should not be interpreted as financial, legal, or security guarantees.</sub>
