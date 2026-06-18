@@ -1,10 +1,9 @@
-````md
 <div align="center">
 
 <h1>WalletWall</h1>
 
 <p>
-  <strong>Wallet intelligence for holder behavior, stablecoin concentration, whale activity, and post-quantum migration readiness.</strong>
+  <strong>Wallet intelligence for holder behavior, stablecoin concentration, whale activity, and post-quantum wallet readiness.</strong>
 </p>
 
 <p>
@@ -15,6 +14,41 @@
 </p>
 
 </div>
+
+---
+
+## Product journey
+
+```mermaid
+flowchart LR
+    start[Start with an address, token, pool, or holder list]
+
+    start --> discover[Discover relationships]
+    discover --> coinstellation[Coinstellation]
+
+    coinstellation --> wallet[Open wallet context]
+    wallet --> whaleWatcher[Whale Watcher]
+    wallet --> stableSeer[Stable Seer]
+
+    whaleWatcher --> behavior[Holder behavior and whale movement]
+    stableSeer --> concentration[Stablecoin concentration and leaderboards]
+
+    behavior --> readiness[Assess wallet readiness]
+    concentration --> readiness
+
+    readiness --> quantumIntel[Quantum Intelligence]
+    quantumIntel --> outcomes[Monitor, research, or prepare migration path]
+
+    classDef entry fill:#2F1F1A,stroke:#C66B4E,color:#F7EADC,stroke-width:2px
+    classDef discovery fill:#3A2A24,stroke:#D98F6F,color:#FFF3E5,stroke-width:1px
+    classDef surface fill:#1F2933,stroke:#8B6F61,color:#F4EFE8,stroke-width:1px
+    classDef outcome fill:#292524,stroke:#C66B4E,color:#F7EADC,stroke-width:1px
+
+    class start entry
+    class discover,coinstellation discovery
+    class wallet,whaleWatcher,stableSeer,behavior,concentration,readiness,quantumIntel surface
+    class outcomes outcome
+```
 
 ---
 
@@ -45,63 +79,35 @@ flowchart LR
     quantumIntel --> migrationReadiness[Migration readiness]
     quantumIntel --> pqResearch[Post-quantum research]
 
-    classDef core fill:#2F1F1A,stroke:#C66B4E,color:#F7EADC,stroke-width:2px;
-    classDef surface fill:#3A2A24,stroke:#D98F6F,color:#FFF3E5,stroke-width:1px;
-    classDef detail fill:#1F2933,stroke:#8B6F61,color:#F4EFE8,stroke-width:1px;
+    classDef core fill:#2F1F1A,stroke:#C66B4E,color:#F7EADC,stroke-width:2px
+    classDef surface fill:#3A2A24,stroke:#D98F6F,color:#FFF3E5,stroke-width:1px
+    classDef detail fill:#1F2933,stroke:#8B6F61,color:#F4EFE8,stroke-width:1px
 
-    class walletwall core;
-    class whaleWatcher,stableSeer,coinstellation,quantumIntel surface;
-    class holderBehavior,whaleMovement,walletSummaries,stablecoinHolders,concentration,leaderboards,tokenDiscovery,poolExploration,graphNavigation,exposureModeling,migrationReadiness,pqResearch detail;
+    class walletwall core
+    class whaleWatcher,stableSeer,coinstellation,quantumIntel surface
+    class holderBehavior,whaleMovement,walletSummaries,stablecoinHolders,concentration,leaderboards,tokenDiscovery,poolExploration,graphNavigation,exposureModeling,migrationReadiness,pqResearch detail
 ```
+
 ---
 
 ## Product surfaces
 
-<table>
-  <tr>
-    <td width="25%"><strong>Whale Watcher</strong></td>
-    <td>Wallet-level holder intelligence, whale activity, and large-wallet behavior.</td>
-  </tr>
-  <tr>
-    <td><strong>Stable Seer</strong></td>
-    <td>Stablecoin holder analysis, concentration patterns, leaderboards, and distribution signals.</td>
-  </tr>
-  <tr>
-    <td><strong>Coinstellation</strong></td>
-    <td>Token, pool, and wallet discovery through graph-based exploration.</td>
-  </tr>
-  <tr>
-    <td><strong>Quantum Intelligence</strong></td>
-    <td>Wallet-level exposure, migration readiness, and post-quantum research framing.</td>
-  </tr>
-</table>
+| Surface                  | Focus                                                                                       |
+| ------------------------ | ------------------------------------------------------------------------------------------- |
+| **Whale Watcher**        | Wallet-level holder intelligence, whale activity, and large-wallet behavior.                |
+| **Stable Seer**          | Stablecoin holder analysis, concentration patterns, leaderboards, and distribution signals. |
+| **Coinstellation**       | Token, pool, and wallet discovery through graph-based exploration.                          |
+| **Quantum Intelligence** | Wallet-level exposure, migration readiness, and post-quantum research framing.              |
 
 ---
 
 ## Public repositories
 
-<table>
-  <tr>
-    <th align="left">Repository</th>
-    <th align="left">Purpose</th>
-    <th align="left">State</th>
-  </tr>
-  <tr>
-    <td><strong>walletwall-vault</strong></td>
-    <td>Post-quantum wallet migration research, verifier feasibility, attestation flows, and vault-readiness patterns.</td>
-    <td><code>research</code></td>
-  </tr>
-  <tr>
-    <td><strong>walletwall-whale-watcher</strong></td>
-    <td>Public Whale Watcher workspace and wallet-intelligence surface.</td>
-    <td><code>product surface</code></td>
-  </tr>
-  <tr>
-    <td><strong>.github</strong></td>
-    <td>Public organization profile and shared community defaults.</td>
-    <td><code>metadata</code></td>
-  </tr>
-</table>
+| Repository                                                                              | Purpose                                                                                                        | State             |
+| --------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | ----------------- |
+| [**walletwall-vault**](https://github.com/Wallet-Wall/walletwall-vault)                 | Post-quantum wallet migration research, verifier feasibility, attestation flows, and vault-readiness patterns. | `research`        |
+| [**walletwall-whale-watcher**](https://github.com/Wallet-Wall/walletwall-whale-watcher) | Public Whale Watcher workspace and wallet-intelligence surface.                                                | `product surface` |
+| [**.github**](https://github.com/Wallet-Wall/.github)                                   | Public organization profile and shared community defaults.                                                     | `metadata`        |
 
 ---
 
@@ -111,13 +117,11 @@ WalletWall is researching practical wallet migration paths for a post-quantum en
 
 The work focuses on:
 
-```txt
-wallet-level exposure modeling
-clear user-facing risk language
-non-custodial migration readiness
-verifier and attestation boundaries
-research-to-product separation
-```
+* wallet-level exposure modeling
+* clear user-facing risk language
+* non-custodial migration readiness
+* verifier and attestation boundaries
+* research-to-product separation
 
 The research is not financial advice, custody infrastructure, or a claim that any specific wallet is compromised. It is a framework for understanding public wallet exposure and preparing safer migration paths.
 
@@ -125,35 +129,23 @@ The research is not financial advice, custody infrastructure, or a claim that an
 
 ## Security posture
 
-<table>
-  <tr>
-    <td><strong>Custody</strong></td>
-    <td>WalletWall does not custody funds.</td>
-  </tr>
-  <tr>
-    <td><strong>Secrets</strong></td>
-    <td>WalletWall does not request seed phrases or private keys.</td>
-  </tr>
-  <tr>
-    <td><strong>Signing</strong></td>
-    <td>WalletWall does not require unsafe transaction signing for wallet analysis.</td>
-  </tr>
-  <tr>
-    <td><strong>Research boundary</strong></td>
-    <td>Experimental vault and verifier work should be treated as research unless explicitly marked otherwise.</td>
-  </tr>
-</table>
+| Boundary              | Position                                                                                               |
+| --------------------- | ------------------------------------------------------------------------------------------------------ |
+| **Custody**           | WalletWall does not custody funds.                                                                     |
+| **Secrets**           | WalletWall does not request seed phrases or private keys.                                              |
+| **Signing**           | WalletWall does not require unsafe transaction signing for wallet analysis.                            |
+| **Research boundary** | Experimental vault and verifier work should be treated as research unless explicitly marked otherwise. |
 
 ---
 
 ## Links
 
-| Destination | URL |
-| --- | --- |
-| App | https://walletwall.org |
-| Docs | https://docs.walletwall.org |
-| Vault research | https://github.com/Wallet-Wall/walletwall-vault |
-| Whale Watcher | https://github.com/Wallet-Wall/walletwall-whale-watcher |
+| Destination    | URL                                                     |
+| -------------- | ------------------------------------------------------- |
+| App            | https://walletwall.org                                  |
+| Docs           | https://docs.walletwall.org                             |
+| Vault research | https://github.com/Wallet-Wall/walletwall-vault         |
+| Whale Watcher  | https://github.com/Wallet-Wall/walletwall-whale-watcher |
 
 ---
 
@@ -164,4 +156,3 @@ WalletWall is in active development.
 Public repositories may represent research, prototypes, or standalone product surfaces while the main application continues to evolve.
 
 <sub>WalletWall is a non-custodial intelligence and research project. Public materials should not be interpreted as financial, legal, or security guarantees.</sub>
-````
