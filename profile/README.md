@@ -1,14 +1,18 @@
 ````md
 <div align="center">
 
-# WalletWall
+<h1>WalletWall</h1>
 
-**Wallet intelligence for holder behavior, stablecoin concentration, whale activity, and post-quantum migration readiness.**
+<p>
+  <strong>Wallet intelligence for holder behavior, stablecoin concentration, whale activity, and post-quantum migration readiness.</strong>
+</p>
 
-[![Status](https://img.shields.io/badge/status-active_development-C66B4E?style=flat-square)](#status)
-[![Research](https://img.shields.io/badge/research-post--quantum_ wallets-8B5E4A?style=flat-square)](#research-direction)
-[![Security](https://img.shields.io/badge/security-non--custodial-2F1F1A?style=flat-square)](#security-posture)
-[![Docs](https://img.shields.io/badge/docs-walletwall.org-D98F6F?style=flat-square)](https://docs.walletwall.org)
+<p>
+  <a href="#status"><img alt="Status" src="https://img.shields.io/badge/status-active_development-C66B4E?style=flat-square"></a>
+  <a href="#research-direction"><img alt="Research" src="https://img.shields.io/badge/research-post--quantum_wallets-8B5E4A?style=flat-square"></a>
+  <a href="#security-posture"><img alt="Security" src="https://img.shields.io/badge/security-non--custodial-2F1F1A?style=flat-square"></a>
+  <a href="https://docs.walletwall.org"><img alt="Docs" src="https://img.shields.io/badge/docs-walletwall.org-D98F6F?style=flat-square"></a>
+</p>
 
 </div>
 
@@ -18,38 +22,37 @@
 
 ```mermaid
 flowchart LR
-    W[WalletWall]
+    walletwall[WalletWall]
 
-    W --> WW[Whale Watcher]
-    W --> SS[Stable Seer]
-    W --> CS[Coinstellation]
-    W --> QI[Quantum Intelligence]
+    walletwall --> whaleWatcher[Whale Watcher]
+    walletwall --> stableSeer[Stable Seer]
+    walletwall --> coinstellation[Coinstellation]
+    walletwall --> quantumIntel[Quantum Intelligence]
 
-    WW --> WW1[Holder behavior]
-    WW --> WW2[Whale movement]
-    WW --> WW3[Wallet summaries]
+    whaleWatcher --> holderBehavior[Holder behavior]
+    whaleWatcher --> whaleMovement[Whale movement]
+    whaleWatcher --> walletSummaries[Wallet summaries]
 
-    SS --> SS1[Stablecoin holders]
-    SS --> SS2[Concentration]
-    SS --> SS3[Leaderboards]
+    stableSeer --> stablecoinHolders[Stablecoin holders]
+    stableSeer --> concentration[Concentration]
+    stableSeer --> leaderboards[Leaderboards]
 
-    CS --> CS1[Token discovery]
-    CS --> CS2[Pool exploration]
-    CS --> CS3[Graph navigation]
+    coinstellation --> tokenDiscovery[Token discovery]
+    coinstellation --> poolExploration[Pool exploration]
+    coinstellation --> graphNavigation[Graph navigation]
 
-    QI --> QI1[Exposure modeling]
-    QI --> QI2[Migration readiness]
-    QI --> QI3[Post-quantum research]
+    quantumIntel --> exposureModeling[Exposure modeling]
+    quantumIntel --> migrationReadiness[Migration readiness]
+    quantumIntel --> pqResearch[Post-quantum research]
 
     classDef core fill:#2F1F1A,stroke:#C66B4E,color:#F7EADC,stroke-width:2px;
     classDef surface fill:#3A2A24,stroke:#D98F6F,color:#FFF3E5,stroke-width:1px;
     classDef detail fill:#1F2933,stroke:#8B6F61,color:#F4EFE8,stroke-width:1px;
 
-    class W core;
-    class WW,SS,CS,QI surface;
-    class WW1,WW2,WW3,SS1,SS2,SS3,CS1,CS2,CS3,QI1,QI2,QI3 detail;
+    class walletwall core;
+    class whaleWatcher,stableSeer,coinstellation,quantumIntel surface;
+    class holderBehavior,whaleMovement,walletSummaries,stablecoinHolders,concentration,leaderboards,tokenDiscovery,poolExploration,graphNavigation,exposureModeling,migrationReadiness,pqResearch detail;
 ```
-
 ---
 
 ## Product surfaces
