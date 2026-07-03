@@ -3,7 +3,7 @@
 <h1>WalletWall</h1>
 
 <p>
-  <strong>Wallet intelligence for holder behavior, stablecoin concentration, whale activity, and post-quantum wallet readiness.</strong>
+  <strong>A read-only vault-readiness platform powered by wallet intelligence — holder behavior, stablecoin concentration, and whale activity — with post-quantum migration as supporting research.</strong>
 </p>
 
 <p>
@@ -116,11 +116,15 @@ flowchart LR
 
 ## Public repositories
 
-| Repository                                                                              | Purpose                                                                                                        | State             |
-| --------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | ----------------- |
-| [**walletwall-vault**](https://github.com/Wallet-Wall/walletwall-vault)                 | Post-quantum wallet migration research, verifier feasibility, attestation flows, and vault-readiness patterns. | `research`        |
-| [**walletwall-whale-watcher**](https://github.com/Wallet-Wall/walletwall-whale-watcher) | Public Whale Watcher workspace and wallet-intelligence surface.                                                | `product surface` |
-| [**.github**](https://github.com/Wallet-Wall/.github)                                   | Public organization profile and shared community defaults.                                                     | `metadata`        |
+| Repository                                                                                | Purpose                                                                                                        | State                        |
+| ----------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | ---------------------------- |
+| [**walletwall-vault**](https://github.com/Wallet-Wall/walletwall-vault)                   | Post-quantum wallet migration research, verifier feasibility, attestation flows, and vault-readiness patterns. | `research`                   |
+| [**walletwall-whale-watcher**](https://github.com/Wallet-Wall/walletwall-whale-watcher)   | Public Whale Watcher workspace and wallet-intelligence surface.                                                | `product surface`            |
+| [**walletwall-stable-seer**](https://github.com/Wallet-Wall/walletwall-stable-seer)       | Stable Seer stablecoin-concentration surface running on bundled fixtures.                                      | `demo surface (fixture-only)` |
+| [**walletwall-holder-wall**](https://github.com/Wallet-Wall/walletwall-holder-wall)       | Holder Wall behavior-and-concentration surface running on bundled fixtures.                                    | `demo surface (fixture-only)` |
+| [**walletwall-coinstellation**](https://github.com/Wallet-Wall/walletwall-coinstellation) | Coinstellation token, pool, and wallet discovery surface running on bundled fixtures.                          | `demo surface (fixture-only)` |
+| [**walletwall-evidence-simulator**](https://github.com/Wallet-Wall/walletwall-evidence-simulator) | Reproducible, fixture-only container that rehearses the evidence-normalization pipeline with no live data.     | `verification artifact`      |
+| [**.github**](https://github.com/Wallet-Wall/.github)                                     | Public organization profile and shared community defaults.                                                     | `metadata`                   |
 
 ---
 
