@@ -7,10 +7,10 @@
 </p>
 
 <p>
-  <a href="#status"><img alt="Status" src="https://img.shields.io/badge/status-active_development-C66B4E?style=flat-square"></a>
-  <a href="#research-direction"><img alt="Research" src="https://img.shields.io/badge/research-post--quantum_wallets-8B5E4A?style=flat-square"></a>
-  <a href="#security-posture"><img alt="Security" src="https://img.shields.io/badge/security-non--custodial-2F1F1A?style=flat-square"></a>
-  <a href="https://docs.walletwall.org"><img alt="Docs" src="https://img.shields.io/badge/docs-walletwall.org-D98F6F?style=flat-square"></a>
+  <a href="#status"><img alt="Status" src="https://img.shields.io/badge/status-active_development-B84923?style=flat-square"></a>
+  <a href="#research-direction"><img alt="Research" src="https://img.shields.io/badge/research-post--quantum_wallets-D6A85A?style=flat-square"></a>
+  <a href="#security-posture"><img alt="Security" src="https://img.shields.io/badge/security-non--custodial-2B2118?style=flat-square"></a>
+  <a href="https://docs.walletwall.org"><img alt="Docs" src="https://img.shields.io/badge/docs-walletwall.org-A7B0B5?style=flat-square"></a>
 </p>
 
 </div>
@@ -29,24 +29,30 @@ flowchart LR
     coinstellation --> wallet[Open wallet context]
     wallet --> whaleWatcher[Whale Watcher]
     wallet --> stableSeer[Stable Seer]
+    wallet --> holderWall[Holder Wall]
 
     whaleWatcher --> behavior[Holder behavior and whale movement]
     stableSeer --> concentration[Stablecoin concentration and leaderboards]
+    holderWall --> ownership[Ownership concentration and retention]
 
     behavior --> readiness[Assess wallet readiness]
     concentration --> readiness
+    ownership --> readiness
 
     readiness --> quantumIntel[Quantum Intelligence]
-    quantumIntel --> outcomes[Monitor, research, or prepare migration path]
+    quantumIntel --> vaultReadiness[Stablecoin Vault readiness journey]
+    vaultReadiness --> outcomes[Monitor, research, or rehearse migration]
 
-    classDef entry fill:#2F1F1A,stroke:#C66B4E,color:#F7EADC,stroke-width:2px
-    classDef discovery fill:#3A2A24,stroke:#D98F6F,color:#FFF3E5,stroke-width:1px
-    classDef surface fill:#1F2933,stroke:#8B6F61,color:#F4EFE8,stroke-width:1px
-    classDef outcome fill:#292524,stroke:#C66B4E,color:#F7EADC,stroke-width:1px
+    classDef entry fill:#FAFAF0,stroke:#B87333,color:#2B2118,stroke-width:1.5px;
+    classDef discovery fill:#A7B0B5,stroke:#59646A,color:#172014,stroke-width:1.5px;
+    classDef surface fill:#B84923,stroke:#6B2412,color:#FFF7E8,stroke-width:1.5px;
+    classDef journey fill:#D6A85A,stroke:#8A5A1F,color:#2B2118,stroke-width:1.5px;
+    classDef outcome fill:#9AAB89,stroke:#526246,color:#172014,stroke-width:1.5px;
 
     class start entry
-    class discover,coinstellation discovery
-    class wallet,whaleWatcher,stableSeer,behavior,concentration,readiness,quantumIntel surface
+    class discover,coinstellation,wallet discovery
+    class whaleWatcher,stableSeer,holderWall,behavior,concentration,ownership,readiness,quantumIntel surface
+    class vaultReadiness journey
     class outcomes outcome
 ```
 
@@ -60,8 +66,10 @@ flowchart LR
 
     walletwall --> whaleWatcher[Whale Watcher]
     walletwall --> stableSeer[Stable Seer]
+    walletwall --> holderWall[Holder Wall]
     walletwall --> coinstellation[Coinstellation]
     walletwall --> quantumIntel[Quantum Intelligence]
+    walletwall --> vault[Stablecoin Vault]
 
     whaleWatcher --> holderBehavior[Holder behavior]
     whaleWatcher --> whaleMovement[Whale movement]
@@ -71,6 +79,10 @@ flowchart LR
     stableSeer --> concentration[Concentration]
     stableSeer --> leaderboards[Leaderboards]
 
+    holderWall --> ownershipConcentration[Ownership concentration]
+    holderWall --> retention[Retention]
+    holderWall --> distribution[Distribution]
+
     coinstellation --> tokenDiscovery[Token discovery]
     coinstellation --> poolExploration[Pool exploration]
     coinstellation --> graphNavigation[Graph navigation]
@@ -79,13 +91,17 @@ flowchart LR
     quantumIntel --> migrationReadiness[Migration readiness]
     quantumIntel --> pqResearch[Post-quantum research]
 
-    classDef core fill:#2F1F1A,stroke:#C66B4E,color:#F7EADC,stroke-width:2px
-    classDef surface fill:#3A2A24,stroke:#D98F6F,color:#FFF3E5,stroke-width:1px
-    classDef detail fill:#1F2933,stroke:#8B6F61,color:#F4EFE8,stroke-width:1px
+    vault --> readinessAssessment[Read-only readiness assessment]
+    vault --> testnetRehearsal[Sepolia testnet rehearsal]
+    vault --> noCustody[No custody, no yield]
+
+    classDef core fill:#B84923,stroke:#6B2412,color:#FFF7E8,stroke-width:1.5px;
+    classDef surface fill:#D6A85A,stroke:#8A5A1F,color:#2B2118,stroke-width:1.5px;
+    classDef detail fill:#A7B0B5,stroke:#59646A,color:#172014,stroke-width:1.5px;
 
     class walletwall core
-    class whaleWatcher,stableSeer,coinstellation,quantumIntel surface
-    class holderBehavior,whaleMovement,walletSummaries,stablecoinHolders,concentration,leaderboards,tokenDiscovery,poolExploration,graphNavigation,exposureModeling,migrationReadiness,pqResearch detail
+    class whaleWatcher,stableSeer,holderWall,coinstellation,quantumIntel,vault surface
+    class holderBehavior,whaleMovement,walletSummaries,stablecoinHolders,concentration,leaderboards,ownershipConcentration,retention,distribution,tokenDiscovery,poolExploration,graphNavigation,exposureModeling,migrationReadiness,pqResearch,readinessAssessment,testnetRehearsal,noCustody detail
 ```
 
 ---
@@ -99,7 +115,7 @@ flowchart LR
 > Public research and product surfaces are separated. Vault and verifier work should be treated as research unless explicitly marked otherwise.
 
 > [!TIP]
-> Coinstellation is the discovery layer. Wallet-level context should resolve into Whale Watcher, Stable Seer, or Quantum Intelligence depending on the source context.
+> Coinstellation is the discovery layer. Wallet-level context should resolve into Whale Watcher, Stable Seer, Holder Wall, or Quantum Intelligence depending on the source context.
 
 ---
 
@@ -109,8 +125,10 @@ flowchart LR
 | ------------------------ | ------------------------------------------------------------------------------------------- |
 | **Whale Watcher**        | Wallet-level holder intelligence, whale activity, and large-wallet behavior.                |
 | **Stable Seer**          | Stablecoin holder analysis, concentration patterns, leaderboards, and distribution signals. |
+| **Holder Wall**          | Holder analytics — ownership concentration, retention, and distribution.                    |
 | **Coinstellation**       | Token, pool, and wallet discovery through graph-based exploration.                          |
 | **Quantum Intelligence** | Wallet-level exposure, migration readiness, and post-quantum research framing.              |
+| **Stablecoin Vault**     | Read-only vault-readiness journey and Sepolia testnet migration-path rehearsal.              |
 
 ---
 
@@ -150,7 +168,7 @@ The research is not financial advice, custody infrastructure, or a claim that an
 ## Security posture
 
 | Boundary              | Position                                                                                               |
-| --------------------- | ------------------------------------------------------------------------------------------------------ |
+| --------------------- | -------------------------------------------------------------------------------------------------------- |
 | **Custody**           | WalletWall does not custody funds.                                                                     |
 | **Secrets**           | WalletWall does not request seed phrases or private keys.                                              |
 | **Signing**           | WalletWall does not require unsafe transaction signing for wallet analysis.                            |
