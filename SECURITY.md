@@ -12,7 +12,7 @@ WalletWall does not custody funds, request seed phrases, require private keys, o
 ## Security boundary
 
 ```mermaid
-flowchart LR
+flowchart TD
     public[Public WalletWall Repositories]
 
     public --> docs[Documentation]
@@ -36,10 +36,10 @@ flowchart LR
     safe --> report[Public Issue or Pull Request]
     restricted --> privatePath[Request Private Reporting Path]
 
-    classDef publicScope fill:#B84923,stroke:#6B2412,color:#FFF7E8,stroke-width:1.5px;
-    classDef safeScope fill:#9AAB89,stroke:#526246,color:#172014,stroke-width:1.5px;
-    classDef restrictedScope fill:#8F2F1D,stroke:#5E1D12,color:#FFF7E8,stroke-width:1.5px;
-    classDef action fill:#D6A85A,stroke:#8A5A1F,color:#2B2118,stroke-width:1.5px;
+    classDef publicScope fill:#BF4E32,stroke:#8B3120,color:#FAF8F3,stroke-width:1.5px;
+    classDef safeScope fill:#E6DED2,stroke:#9A9186,color:#1E1A14,stroke-width:1.5px;
+    classDef restrictedScope fill:#1E1A14,stroke:#C9A47A,color:#FAF8F3,stroke-width:1.5px;
+    classDef action fill:#C9A47A,stroke:#8B6F47,color:#1E1A14,stroke-width:1.5px;
 
     class public publicScope
     class docs,research,examples,surfaces,safe safeScope

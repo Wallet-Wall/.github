@@ -20,7 +20,7 @@
 ## Product journey
 
 ```mermaid
-flowchart LR
+flowchart TD
     start[Start with an address, token, pool, or holder list]
 
     start --> discover[Discover relationships]
@@ -32,26 +32,26 @@ flowchart LR
     wallet --> holderWall[Holder Wall]
 
     whaleWatcher --> behavior[Holder behavior and whale movement]
-    stableSeer --> concentration[Stablecoin concentration and leaderboards]
+    stableSeer --> pegLiquidity[Stablecoin peg and liquidity context]
     holderWall --> ownership[Ownership concentration and retention]
 
     behavior --> readiness[Assess wallet readiness]
-    concentration --> readiness
+    pegLiquidity --> readiness
     ownership --> readiness
 
     readiness --> quantumIntel[Quantum Intelligence]
     quantumIntel --> vaultReadiness[Stablecoin Vault readiness journey]
     vaultReadiness --> outcomes[Monitor, research, or rehearse migration]
 
-    classDef entry fill:#FAFAF0,stroke:#B87333,color:#2B2118,stroke-width:1.5px;
-    classDef discovery fill:#A7B0B5,stroke:#59646A,color:#172014,stroke-width:1.5px;
-    classDef surface fill:#B84923,stroke:#6B2412,color:#FFF7E8,stroke-width:1.5px;
-    classDef journey fill:#D6A85A,stroke:#8A5A1F,color:#2B2118,stroke-width:1.5px;
-    classDef outcome fill:#9AAB89,stroke:#526246,color:#172014,stroke-width:1.5px;
+    classDef entry fill:#FAF8F3,stroke:#C9A47A,color:#1E1A14,stroke-width:1.5px;
+    classDef discovery fill:#E6DED2,stroke:#9A9186,color:#1E1A14,stroke-width:1.5px;
+    classDef surface fill:#BF4E32,stroke:#8B3120,color:#FAF8F3,stroke-width:1.5px;
+    classDef journey fill:#C9A47A,stroke:#8B6F47,color:#1E1A14,stroke-width:1.5px;
+    classDef outcome fill:#1E1A14,stroke:#C9A47A,color:#FAF8F3,stroke-width:1.5px;
 
     class start entry
     class discover,coinstellation,wallet discovery
-    class whaleWatcher,stableSeer,holderWall,behavior,concentration,ownership,readiness,quantumIntel surface
+    class whaleWatcher,stableSeer,holderWall,behavior,pegLiquidity,ownership,readiness,quantumIntel surface
     class vaultReadiness journey
     class outcomes outcome
 ```
@@ -61,7 +61,7 @@ flowchart LR
 ## System map
 
 ```mermaid
-flowchart LR
+flowchart TD
     walletwall[WalletWall]
 
     walletwall --> whaleWatcher[Whale Watcher]
@@ -75,9 +75,9 @@ flowchart LR
     whaleWatcher --> whaleMovement[Whale movement]
     whaleWatcher --> walletSummaries[Wallet summaries]
 
-    stableSeer --> stablecoinHolders[Stablecoin holders]
-    stableSeer --> concentration[Concentration]
-    stableSeer --> leaderboards[Leaderboards]
+    stableSeer --> pegContext[Peg context]
+    stableSeer --> liquidity[Liquidity depth]
+    stableSeer --> poolStructure[Pool structure]
 
     holderWall --> ownershipConcentration[Ownership concentration]
     holderWall --> retention[Retention]
@@ -95,13 +95,13 @@ flowchart LR
     vault --> testnetRehearsal[Sepolia testnet rehearsal]
     vault --> noCustody[No custody, no yield]
 
-    classDef core fill:#B84923,stroke:#6B2412,color:#FFF7E8,stroke-width:1.5px;
-    classDef surface fill:#D6A85A,stroke:#8A5A1F,color:#2B2118,stroke-width:1.5px;
-    classDef detail fill:#A7B0B5,stroke:#59646A,color:#172014,stroke-width:1.5px;
+    classDef core fill:#BF4E32,stroke:#8B3120,color:#FAF8F3,stroke-width:1.5px;
+    classDef surface fill:#C9A47A,stroke:#8B6F47,color:#1E1A14,stroke-width:1.5px;
+    classDef detail fill:#E6DED2,stroke:#9A9186,color:#1E1A14,stroke-width:1.5px;
 
     class walletwall core
     class whaleWatcher,stableSeer,holderWall,coinstellation,quantumIntel,vault surface
-    class holderBehavior,whaleMovement,walletSummaries,stablecoinHolders,concentration,leaderboards,ownershipConcentration,retention,distribution,tokenDiscovery,poolExploration,graphNavigation,exposureModeling,migrationReadiness,pqResearch,readinessAssessment,testnetRehearsal,noCustody detail
+    class holderBehavior,whaleMovement,walletSummaries,pegContext,liquidity,poolStructure,ownershipConcentration,retention,distribution,tokenDiscovery,poolExploration,graphNavigation,exposureModeling,migrationReadiness,pqResearch,readinessAssessment,testnetRehearsal,noCustody detail
 ```
 
 ---
@@ -124,7 +124,7 @@ flowchart LR
 | Surface                  | Focus                                                                                       |
 | ------------------------ | ------------------------------------------------------------------------------------------- |
 | **Whale Watcher**        | Wallet-level holder intelligence, whale activity, and large-wallet behavior.                |
-| **Stable Seer**          | Stablecoin holder analysis, concentration patterns, leaderboards, and distribution signals. |
+| **Stable Seer**          | Stablecoin peg, liquidity, and pool-market context.                                          |
 | **Holder Wall**          | Holder analytics — ownership concentration, retention, and distribution.                    |
 | **Coinstellation**       | Token, pool, and wallet discovery through graph-based exploration.                          |
 | **Quantum Intelligence** | Wallet-level exposure, migration readiness, and post-quantum research framing.              |

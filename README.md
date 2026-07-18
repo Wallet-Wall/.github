@@ -14,7 +14,7 @@ It is separate from the WalletWall application codebase.
 The `.github` repository currently manages two public-facing files:
 
 ```mermaid
-flowchart LR
+flowchart TD
     repo[Wallet-Wall/.github]
 
     repo --> profile[profile/README.md]
@@ -23,9 +23,9 @@ flowchart LR
     profile --> orgPage[Public organization profile]
     security --> policy[Security policy and reporting boundaries]
 
-    classDef root fill:#2F1F1A,stroke:#C66B4E,color:#F7EADC,stroke-width:2px
-    classDef file fill:#3A2A24,stroke:#D98F6F,color:#FFF3E5,stroke-width:1px
-    classDef output fill:#1F2933,stroke:#8B6F61,color:#F4EFE8,stroke-width:1px
+    classDef root fill:#1E1A14,stroke:#C9A47A,color:#FAF8F3,stroke-width:2px
+    classDef file fill:#BF4E32,stroke:#8B3120,color:#FAF8F3,stroke-width:1px
+    classDef output fill:#E6DED2,stroke:#9A9186,color:#1E1A14,stroke-width:1px
 
     class repo root
     class profile,security file
