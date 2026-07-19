@@ -13,24 +13,20 @@ It is separate from the WalletWall application codebase.
 
 The `.github` repository currently manages two public-facing files:
 
-```mermaid
-flowchart TD
-    repo[Wallet-Wall/.github]
+<picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="assets/diagrams/adaptive/readme-repository-purpose-01-dark.svg"
+  />
+  <img
+    src="assets/diagrams/adaptive/readme-repository-purpose-01-light.svg"
+    alt="Repository purpose: flowchart diagram"
+    width="100%"
+  />
+</picture>
 
-    repo --> profile[profile/README.md]
-    repo --> security[SECURITY.md]
-
-    profile --> orgPage[Public organization profile]
-    security --> policy[Security policy and reporting boundaries]
-
-    classDef root fill:#1E1A14,stroke:#C9A47A,color:#FAF8F3,stroke-width:2px
-    classDef file fill:#BF4E32,stroke:#8B3120,color:#FAF8F3,stroke-width:1px
-    classDef output fill:#E6DED2,stroke:#9A9186,color:#1E1A14,stroke-width:1px
-
-    class repo root
-    class profile,security file
-    class orgPage,policy output
-```
+_Appearance-aware WalletWall diagram. Open the full-size [light](assets/diagrams/adaptive/readme-repository-purpose-01-light.svg) or
+[dark](assets/diagrams/adaptive/readme-repository-purpose-01-dark.svg) variant. [Mermaid source](diagrams/adaptive/readme-repository-purpose-01.mmd)._
 
 ---
 

@@ -11,41 +11,20 @@ WalletWall does not custody funds, request seed phrases, require private keys, o
 
 ## Security boundary
 
-```mermaid
-flowchart TD
-    public[Public WalletWall Repositories]
+<picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="assets/diagrams/adaptive/security-security-boundary-01-dark.svg"
+  />
+  <img
+    src="assets/diagrams/adaptive/security-security-boundary-01-light.svg"
+    alt="Security boundary: flowchart diagram"
+    width="100%"
+  />
+</picture>
 
-    public --> docs[Documentation]
-    public --> research[Research Materials]
-    public --> examples[Public Examples]
-    public --> surfaces[Selected Product Surfaces]
-
-    docs --> safe[Safe Public Review]
-    research --> safe
-    examples --> safe
-    surfaces --> safe
-
-    private[Private Application Surface]
-    infra[Infrastructure and Secrets]
-    custody[Wallet Custody or Private Keys]
-
-    private -. out of public scope .-> restricted[Do Not Disclose Publicly]
-    infra -. out of public scope .-> restricted
-    custody -. never requested .-> restricted
-
-    safe --> report[Public Issue or Pull Request]
-    restricted --> privatePath[Request Private Reporting Path]
-
-    classDef publicScope fill:#BF4E32,stroke:#8B3120,color:#FAF8F3,stroke-width:1.5px;
-    classDef safeScope fill:#E6DED2,stroke:#9A9186,color:#1E1A14,stroke-width:1.5px;
-    classDef restrictedScope fill:#1E1A14,stroke:#C9A47A,color:#FAF8F3,stroke-width:1.5px;
-    classDef action fill:#C9A47A,stroke:#8B6F47,color:#1E1A14,stroke-width:1.5px;
-
-    class public publicScope
-    class docs,research,examples,surfaces,safe safeScope
-    class private,infra,custody,restricted restrictedScope
-    class report,privatePath action
-```
+_Appearance-aware WalletWall diagram. Open the full-size [light](assets/diagrams/adaptive/security-security-boundary-01-light.svg) or
+[dark](assets/diagrams/adaptive/security-security-boundary-01-dark.svg) variant. [Mermaid source](diagrams/adaptive/security-security-boundary-01.mmd)._
 
 ---
 

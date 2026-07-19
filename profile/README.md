@@ -19,90 +19,39 @@
 
 ## Product journey
 
-```mermaid
-flowchart TD
-    start[Start with an address, token, pool, or holder list]
+<picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="../assets/diagrams/adaptive/profile-readme-product-journey-01-dark.svg"
+  />
+  <img
+    src="../assets/diagrams/adaptive/profile-readme-product-journey-01-light.svg"
+    alt="Product journey: flowchart diagram"
+    width="100%"
+  />
+</picture>
 
-    start --> discover[Discover relationships]
-    discover --> coinstellation[Coinstellation]
-
-    coinstellation --> wallet[Open wallet context]
-    wallet --> whaleWatcher[Whale Watcher]
-    wallet --> stableSeer[Stable Seer]
-    wallet --> holderWall[Holder Wall]
-
-    whaleWatcher --> behavior[Holder behavior and whale movement]
-    stableSeer --> pegLiquidity[Stablecoin peg and liquidity context]
-    holderWall --> ownership[Ownership concentration and retention]
-
-    behavior --> readiness[Assess wallet readiness]
-    pegLiquidity --> readiness
-    ownership --> readiness
-
-    readiness --> quantumIntel[Quantum Intelligence]
-    quantumIntel --> vaultReadiness[Stablecoin Vault readiness journey]
-    vaultReadiness --> outcomes[Monitor, research, or rehearse migration]
-
-    classDef entry fill:#FAF8F3,stroke:#C9A47A,color:#1E1A14,stroke-width:1.5px;
-    classDef discovery fill:#E6DED2,stroke:#9A9186,color:#1E1A14,stroke-width:1.5px;
-    classDef surface fill:#BF4E32,stroke:#8B3120,color:#FAF8F3,stroke-width:1.5px;
-    classDef journey fill:#C9A47A,stroke:#8B6F47,color:#1E1A14,stroke-width:1.5px;
-    classDef outcome fill:#1E1A14,stroke:#C9A47A,color:#FAF8F3,stroke-width:1.5px;
-
-    class start entry
-    class discover,coinstellation,wallet discovery
-    class whaleWatcher,stableSeer,holderWall,behavior,pegLiquidity,ownership,readiness,quantumIntel surface
-    class vaultReadiness journey
-    class outcomes outcome
-```
+_Appearance-aware WalletWall diagram. Open the full-size [light](../assets/diagrams/adaptive/profile-readme-product-journey-01-light.svg) or
+[dark](../assets/diagrams/adaptive/profile-readme-product-journey-01-dark.svg) variant. [Mermaid source](../diagrams/adaptive/profile-readme-product-journey-01.mmd)._
 
 ---
 
 ## System map
 
-```mermaid
-flowchart TD
-    walletwall[WalletWall]
+<picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="../assets/diagrams/adaptive/profile-readme-system-map-02-dark.svg"
+  />
+  <img
+    src="../assets/diagrams/adaptive/profile-readme-system-map-02-light.svg"
+    alt="System map: flowchart diagram"
+    width="100%"
+  />
+</picture>
 
-    walletwall --> whaleWatcher[Whale Watcher]
-    walletwall --> stableSeer[Stable Seer]
-    walletwall --> holderWall[Holder Wall]
-    walletwall --> coinstellation[Coinstellation]
-    walletwall --> quantumIntel[Quantum Intelligence]
-    walletwall --> vault[Stablecoin Vault]
-
-    whaleWatcher --> holderBehavior[Holder behavior]
-    whaleWatcher --> whaleMovement[Whale movement]
-    whaleWatcher --> walletSummaries[Wallet summaries]
-
-    stableSeer --> pegContext[Peg context]
-    stableSeer --> liquidity[Liquidity depth]
-    stableSeer --> poolStructure[Pool structure]
-
-    holderWall --> ownershipConcentration[Ownership concentration]
-    holderWall --> retention[Retention]
-    holderWall --> distribution[Distribution]
-
-    coinstellation --> tokenDiscovery[Token discovery]
-    coinstellation --> poolExploration[Pool exploration]
-    coinstellation --> graphNavigation[Graph navigation]
-
-    quantumIntel --> exposureModeling[Exposure modeling]
-    quantumIntel --> migrationReadiness[Migration readiness]
-    quantumIntel --> pqResearch[Post-quantum research]
-
-    vault --> readinessAssessment[Read-only readiness assessment]
-    vault --> testnetRehearsal[Sepolia testnet rehearsal]
-    vault --> noCustody[No custody, no yield]
-
-    classDef core fill:#BF4E32,stroke:#8B3120,color:#FAF8F3,stroke-width:1.5px;
-    classDef surface fill:#C9A47A,stroke:#8B6F47,color:#1E1A14,stroke-width:1.5px;
-    classDef detail fill:#E6DED2,stroke:#9A9186,color:#1E1A14,stroke-width:1.5px;
-
-    class walletwall core
-    class whaleWatcher,stableSeer,holderWall,coinstellation,quantumIntel,vault surface
-    class holderBehavior,whaleMovement,walletSummaries,pegContext,liquidity,poolStructure,ownershipConcentration,retention,distribution,tokenDiscovery,poolExploration,graphNavigation,exposureModeling,migrationReadiness,pqResearch,readinessAssessment,testnetRehearsal,noCustody detail
-```
+_Appearance-aware WalletWall diagram. Open the full-size [light](../assets/diagrams/adaptive/profile-readme-system-map-02-light.svg) or
+[dark](../assets/diagrams/adaptive/profile-readme-system-map-02-dark.svg) variant. [Mermaid source](../diagrams/adaptive/profile-readme-system-map-02.mmd)._
 
 ---
 
