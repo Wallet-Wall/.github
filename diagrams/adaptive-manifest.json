@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "generatedFrom": "tracked Markdown and MDX Mermaid fences",
+  "count": 4,
+  "diagrams": [
+    {
+      "file": "README.md",
+      "heading": "Repository purpose",
+      "index": 1,
+      "type": "flowchart",
+      "source": "diagrams/adaptive/readme-repository-purpose-01.mmd",
+      "light": "assets/diagrams/adaptive/readme-repository-purpose-01-light.svg",
+      "dark": "assets/diagrams/adaptive/readme-repository-purpose-01-dark.svg",
+      "alt": "Repository purpose: flowchart diagram"
+    },
+    {
+      "file": "SECURITY.md",
+      "heading": "Security boundary",
+      "index": 1,
+      "type": "flowchart",
+      "source": "diagrams/adaptive/security-security-boundary-01.mmd",
+      "light": "assets/diagrams/adaptive/security-security-boundary-01-light.svg",
+      "dark": "assets/diagrams/adaptive/security-security-boundary-01-dark.svg",
+      "alt": "Security boundary: flowchart diagram"
+    },
+    {
+      "file": "profile/README.md",
+      "heading": "Product journey",
+      "index": 1,
+      "type": "flowchart",
+      "source": "diagrams/adaptive/profile-readme-product-journey-01.mmd",
+      "light": "assets/diagrams/adaptive/profile-readme-product-journey-01-light.svg",
+      "dark": "assets/diagrams/adaptive/profile-readme-product-journey-01-dark.svg",
+      "alt": "Product journey: flowchart diagram"
+    },
+    {
+      "file": "profile/README.md",
+      "heading": "System map",
+      "index": 2,
+      "type": "flowchart",
+      "source": "diagrams/adaptive/profile-readme-system-map-02.mmd",
+      "light": "assets/diagrams/adaptive/profile-readme-system-map-02-light.svg",
+      "dark": "assets/diagrams/adaptive/profile-readme-system-map-02-dark.svg",
+      "alt": "System map: flowchart diagram"
+    }
+  ]
+}
