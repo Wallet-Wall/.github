@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1820" height="760" viewBox="0 0 1820 760" role="img" aria-labelledby="title desc">
+  <title id="title">WalletWallrus-Org — States Proof Layer</title>
+  <desc id="desc">A branded WalletWall diagram showing observed states flowing into the WalletWallrus-Org States Proof Layer, then through a proof gate to either proven progression or refusal, ending at the next verified state.</desc>
+  <defs>
+    <style>
+      :root {
+        --bg: #FFFEF9;
+        --terracotta: #C96F4A;
+        --terracotta-2: #D77E58;
+        --beige: #EAD9C5;
+        --beige-2: #F2E5D8;
+        --cream: #FFFEF9;
+        --mocha: #7A4E3A;
+        --mocha-2: #4A342C;
+        --mocha-soft: #A97A62;
+        --refuse: #B98C78;
+      }
+      text { font-family: Inter, Manrope, Sora, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+      .label { font-size: 18px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+      .title { font-size: 32px; font-weight: 800; letter-spacing: 0.01em; }
+      .subtitle { font-size: 17px; font-weight: 600; }
+      .small { font-size: 15px; font-weight: 600; }
+      .body { font-size: 16px; font-weight: 600; }
+      .tiny { font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; }
+      .stroke { stroke: var(--mocha); stroke-width: 1; vector-effect: non-scaling-stroke; }
+      .card { rx: 18; ry: 18; }
+      .chip { rx: 14; ry: 14; }
+      .softShadow { filter: url(#shadow); }
+    </style>
+
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#C8A892" flood-opacity="0.18"/>
+    </filter>
+
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#9A6A55"/>
+    </marker>
+
+    <pattern id="brickPattern" x="0" y="0" width="88" height="54" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="88" height="54" fill="none"/>
+      <path d="M0 27.5H88 M0 0.5H88 M0 53.5H88 M44 0V27 M0 27V54 M88 27V54" stroke="#E6A485" stroke-opacity="0.28" stroke-width="1" vector-effect="non-scaling-stroke"/>
+    </pattern>
+
+    <linearGradient id="wallFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D07A55"/>
+      <stop offset="100%" stop-color="#C96F4A"/>
+    </linearGradient>
+
+    <linearGradient id="panelFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F0E3D6"/>
+      <stop offset="100%" stop-color="#EAD9C5"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1820" height="760" fill="#FFFEF9"/>
+
+  <g transform="translate(72,46)">
+    <text class="title" fill="#4A342C">WalletWallrus-Org</text>
+    <text class="subtitle" x="0" y="34" fill="#7A4E3A">States Proof Layer · Progression, proven. · Thick proof. Thin trust.</text>
+  </g>
+
+  <g transform="translate(82,126)">
+    <rect width="256" height="498" fill="url(#panelFill)" class="stroke card softShadow"/>
+    <text class="label" x="24" y="34" fill="#7A4E3A">Observed states</text>
+
+    <g transform="translate(24,68)">
+      <rect width="208" height="96" fill="#FFFEF9" class="stroke card"/>
+      <text class="body" x="104" y="38" text-anchor="middle" fill="#4A342C">Proposed</text>
+      <text class="small" x="104" y="62" text-anchor="middle" fill="#7A4E3A">PR · head</text>
+    </g>
+
+    <g transform="translate(24,196)">
+      <rect width="208" height="96" fill="#FFFEF9" class="stroke card"/>
+      <text class="body" x="104" y="38" text-anchor="middle" fill="#4A342C">Canonical</text>
+      <text class="small" x="104" y="62" text-anchor="middle" fill="#7A4E3A">SHA · tree</text>
+    </g>
+
+    <g transform="translate(24,324)">
+      <rect width="208" height="96" fill="#FFFEF9" class="stroke card"/>
+      <text class="body" x="104" y="38" text-anchor="middle" fill="#4A342C">Mirror</text>
+      <text class="small" x="104" y="62" text-anchor="middle" fill="#7A4E3A">SHA · tree</text>
+    </g>
+
+    <text class="tiny" x="24" y="462" fill="#A97A62">Incoming coordinates</text>
+    <text class="small" x="24" y="486" fill="#7A4E3A">Each observed state is a candidate input.</text>
+  </g>
+
+  <g transform="translate(410,126)">
+    <rect width="486" height="498" fill="url(#wallFill)" class="stroke card softShadow"/>
+    <rect width="486" height="498" fill="url(#brickPattern)" opacity="0.32" class="card"/>
+
+    <text class="title" x="243" y="48" text-anchor="middle" fill="#FFFEF9" style="font-size: 28px;">States Proof Layer</text>
+    <text class="tiny" x="243" y="76" text-anchor="middle" fill="#F6DDD0">Verification boundary between observed state and allowed change</text>
+
+    <g transform="translate(34,112)">
+      <rect width="418" height="96" fill="#F4E7DA" class="stroke card"/>
+      <text class="body" x="209" y="38" text-anchor="middle" fill="#4A342C">Authority · Hashes · Provenance</text>
+      <text class="small" x="209" y="64" text-anchor="middle" fill="#7A4E3A">Who defines the state, what it is, and how it was measured.</text>
+    </g>
+
+    <g transform="translate(34,232)">
+      <rect width="418" height="96" fill="#F4E7DA" class="stroke card"/>
+      <text class="body" x="209" y="38" text-anchor="middle" fill="#4A342C">CI · Freshness</text>
+      <text class="small" x="209" y="64" text-anchor="middle" fill="#7A4E3A">Checks must be green for this exact state, not a prior one.</text>
+    </g>
+
+    <g transform="translate(34,352)">
+      <rect width="418" height="96" fill="#F4E7DA" class="stroke card"/>
+      <text class="body" x="209" y="38" text-anchor="middle" fill="#4A342C">Permissions · Invariants</text>
+      <text class="small" x="209" y="64" text-anchor="middle" fill="#7A4E3A">Progression must remain authorized, coherent, and within bounds.</text>
+    </g>
+  </g>
+
+  <g fill="none" stroke="#9A6A55" stroke-width="1" vector-effect="non-scaling-stroke" marker-end="url(#arrow)">
+    <path d="M338 242 H390"/>
+    <path d="M338 370 C360 370 360 370 390 370"/>
+    <path d="M338 498 C360 498 360 498 390 498"/>
+  </g>
+
+  <g transform="translate(932,296)">
+    <rect width="166" height="132" fill="#F4E7DA" class="stroke card softShadow"/>
+    <text class="body" x="83" y="48" text-anchor="middle" fill="#4A342C">Proof</text>
+    <text class="body" x="83" y="72" text-anchor="middle" fill="#4A342C">holds?</text>
+    <text class="tiny" x="83" y="102" text-anchor="middle" fill="#A97A62">Current state only</text>
+  </g>
+
+  <path d="M896 375 H932" fill="none" stroke="#9A6A55" stroke-width="1" vector-effect="non-scaling-stroke" marker-end="url(#arrow)"/>
+
+  <g transform="translate(1134,246)">
+    <rect width="56" height="36" fill="#D77E58" class="stroke chip"/>
+    <text class="small" x="28" y="24" text-anchor="middle" fill="#FFFEF9">YES</text>
+  </g>
+  <path d="M1098 362 C1118 362 1114 264 1134 264" fill="none" stroke="#9A6A55" stroke-width="1" vector-effect="non-scaling-stroke" marker-end="url(#arrow)"/>
+
+  <g transform="translate(1210,206)">
+    <rect width="236" height="108" fill="#D77E58" class="stroke card softShadow"/>
+    <text class="body" x="118" y="44" text-anchor="middle" fill="#FFFEF9">Proven progression</text>
+    <text class="small" x="118" y="70" text-anchor="middle" fill="#F6DDD0">Admissible state advancement</text>
+  </g>
+
+  <path d="M1190 264 H1210" fill="none" stroke="#9A6A55" stroke-width="1" vector-effect="non-scaling-stroke" marker-end="url(#arrow)"/>
+
+  <g transform="translate(1490,206)">
+    <rect width="208" height="108" fill="#FFFEF9" class="stroke card softShadow"/>
+    <text class="body" x="104" y="44" text-anchor="middle" fill="#4A342C">Next verified state</text>
+    <text class="small" x="104" y="70" text-anchor="middle" fill="#7A4E3A">Bound to the same proof</text>
+  </g>
+  <path d="M1446 260 H1490" fill="none" stroke="#9A6A55" stroke-width="1" vector-effect="non-scaling-stroke" marker-end="url(#arrow)"/>
+
+  <g transform="translate(1134,446)">
+    <rect width="48" height="36" fill="#EAD9C5" class="stroke chip"/>
+    <text class="small" x="24" y="24" text-anchor="middle" fill="#4A342C">NO</text>
+  </g>
+  <path d="M1098 362 C1116 362 1112 464 1134 464" fill="none" stroke="#9A6A55" stroke-width="1" vector-effect="non-scaling-stroke" marker-end="url(#arrow)"/>
+
+  <g transform="translate(1210,404)">
+    <rect width="220" height="108" fill="#B98C78" class="stroke card softShadow"/>
+    <text class="body" x="110" y="44" text-anchor="middle" fill="#FFFEF9">Refuse</text>
+    <text class="small" x="110" y="70" text-anchor="middle" fill="#FFF3EA">State moved · proof invalidated</text>
+  </g>
+  <path d="M1182 464 H1210" fill="none" stroke="#9A6A55" stroke-width="1" vector-effect="non-scaling-stroke" marker-end="url(#arrow)"/>
+
+  <g transform="translate(82,678)">
+    <text class="small" fill="#7A4E3A">Observed state is not assumed state. Access is not authority. No proof, no progression.</text>
+  </g>
+</svg>
