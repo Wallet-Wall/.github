@@ -1,97 +1,57 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1880" height="720" viewBox="0 0 1880 720" role="img" aria-labelledby="title desc">
-  <title id="title">WalletWallrus-Org — States Proof Layer</title>
-  <desc id="desc">A transparent-background WalletWall diagram. Proposed, canonical, and mirror states feed into the WalletWallrus-Org States Proof Layer. From there, proof either holds and permits proven progression to the next verified state, or the state moved and the request is refused.</desc>
-  <defs>
-    <style>
-      text { font-family: Inter, Manrope, Sora, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; }
-      .title { font-size: 34px; font-weight: 800; fill: #F7F1E8; }
-      .subtitle { font-size: 16px; font-weight: 600; fill: #D2BFA9; }
-      .smallcap { font-size: 14px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; fill: #F7F1E8; }
-      .boxTitle { font-size: 16px; font-weight: 700; fill: #4A342C; }
-      .boxSub { font-size: 14px; font-weight: 600; fill: #7A4E3A; }
-      .creamTitle { font-size: 16px; font-weight: 700; fill: #FAF6EF; }
-      .creamSub { font-size: 14px; font-weight: 600; fill: #F9E7DA; }
-      .railText { font-size: 13px; font-weight: 700; text-transform: uppercase; fill: #FAF6EF; }
-      .footer { font-size: 15px; font-weight: 600; fill: #D2BFA9; }
-      .stroke { stroke: #C58D60; stroke-width: 1; vector-effect: non-scaling-stroke; fill: none; stroke-linecap: butt; stroke-linejoin: miter; }
-      .box { stroke: #C58D60; stroke-width: 1; vector-effect: non-scaling-stroke; rx: 1; ry: 1; }
-    </style>
-    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth">
-      <path d="M0 0L8 4L0 8Z" fill="#C58D60"/>
-    </marker>
-  </defs>
-
-  <g transform="translate(74 40)">
-    <image href="data:image/png;base64,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" x="0" y="0" width="84" height="84"/>
-    <text class="title" x="108" y="32">WalletWallrus-Org</text>
-    <text class="subtitle" x="108" y="58">States Proof Layer · Progression, proven. · Thick proof. Thin trust.</text>
-  </g>
-
-  <g transform="translate(90 170)">
-    <text class="smallcap" x="0" y="0">Observed states</text>
-    <g transform="translate(0 28)">
-      <rect class="box" width="230" height="84" fill="#EFE7DB"/>
-      <text class="boxTitle" x="115" y="32" text-anchor="middle">Proposed</text>
-      <text class="boxSub" x="115" y="56" text-anchor="middle">PR · head</text>
-    </g>
-    <g transform="translate(0 148)">
-      <rect class="box" width="230" height="84" fill="#EFE7DB"/>
-      <text class="boxTitle" x="115" y="32" text-anchor="middle">Canonical</text>
-      <text class="boxSub" x="115" y="56" text-anchor="middle">SHA · tree</text>
-    </g>
-    <g transform="translate(0 268)">
-      <rect class="box" width="230" height="84" fill="#EFE7DB"/>
-      <text class="boxTitle" x="115" y="32" text-anchor="middle">Mirror</text>
-      <text class="boxSub" x="115" y="56" text-anchor="middle">SHA · tree</text>
-    </g>
-  </g>
-
-  <g transform="translate(470 210)">
-    <polygon class="box" fill="#C96F4A" points="180,0 360,180 180,360 0,180"/>
-    <text class="creamTitle" x="180" y="136" text-anchor="middle" style="font-size:28px; font-weight:800;">States Proof</text>
-    <text class="creamTitle" x="180" y="172" text-anchor="middle" style="font-size:28px; font-weight:800;">Layer</text>
-    <text class="creamSub" x="180" y="214" text-anchor="middle">Authority · Hashes · Provenance</text>
-    <text class="creamSub" x="180" y="238" text-anchor="middle">CI · Freshness · Permissions · Invariants</text>
-  </g>
-
-  <path class="stroke" d="M320 240H448" marker-end="url(#arrow)"/>
-  <path class="stroke" d="M320 360H448" marker-end="url(#arrow)"/>
-  <path class="stroke" d="M320 480H448" marker-end="url(#arrow)"/>
-
-  <g transform="translate(920 178)">
-    <rect class="box" width="164" height="34" fill="#5E5A60"/>
-    <text class="railText" x="82" y="22" text-anchor="middle">Current proof</text>
-  </g>
-  <path class="stroke" d="M830 390C900 390 875 195 920 195" marker-end="url(#arrow)"/>
-
-  <g transform="translate(1114 154)">
-    <rect class="box" width="192" height="88" fill="#D77E58"/>
-    <text class="creamTitle" x="96" y="35" text-anchor="middle">Proven progression</text>
-    <text class="creamSub" x="96" y="60" text-anchor="middle">State may advance</text>
-  </g>
-  <path class="stroke" d="M1084 195H1114" marker-end="url(#arrow)"/>
-
-  <g transform="translate(1414 154)">
-    <rect class="box" width="234" height="88" fill="#EFE7DB"/>
-    <text class="boxTitle" x="117" y="35" text-anchor="middle">Next verified state</text>
-    <text class="boxSub" x="117" y="60" text-anchor="middle">Proof remains bound</text>
-  </g>
-  <path class="stroke" d="M1306 195H1414" marker-end="url(#arrow)"/>
-
-  <g transform="translate(920 514)">
-    <rect class="box" width="164" height="34" fill="#5E5A60"/>
-    <text class="railText" x="82" y="22" text-anchor="middle">State moved</text>
-  </g>
-  <path class="stroke" d="M830 390C900 390 875 531 920 531" marker-end="url(#arrow)"/>
-
-  <g transform="translate(1114 490)">
-    <rect class="box" width="176" height="88" fill="#A78472"/>
-    <text class="creamTitle" x="88" y="35" text-anchor="middle">Refuse</text>
-    <text class="creamSub" x="88" y="60" text-anchor="middle">Proof invalidated</text>
-  </g>
-  <path class="stroke" d="M1084 531H1114" marker-end="url(#arrow)"/>
-
-  <g transform="translate(90 654)">
-    <text class="footer">Green on the wrong SHA is still wrong. Access is not authority. If reality moves, proof moves with it.</text>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="520" viewBox="0 0 1400 520" role="img" aria-labelledby="title desc">
+<title id="title">WalletWallrus — States Proof Layer</title>
+<desc id="desc">Transparent WalletWall states proof diagram. Proposed, canonical, and mirror states enter WalletWallrus's States Proof Layer. Current proof permits progression to the next verified state; moved state is refused.</desc>
+<defs>
+<style>
+text{font-family:Inter,Manrope,Sora,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.h1{font-size:30px;font-weight:800;fill:#F7F1E8}
+.tag{font-size:14px;font-weight:600;fill:#D4BDAE}
+.eyebrow{font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;fill:#F1E6DD}
+.nodeTitle{font-size:15px;font-weight:760;fill:#4A342C}
+.nodeSub{font-size:12px;font-weight:600;fill:#7A4E3A}
+.heroTitle{font-size:24px;font-weight:800;fill:#FFF8F2}
+.heroSub{font-size:11.5px;font-weight:650;fill:#F9E7DA}
+.railText{font-size:10.5px;font-weight:800;letter-spacing:.03em;text-transform:uppercase;fill:#FFF8F2}
+.outTitle{font-size:14px;font-weight:750;fill:#FFF8F2}
+.outSub{font-size:11.5px;font-weight:600;fill:#F9E7DA}
+.endTitle{font-size:14px;font-weight:750;fill:#4A342C}
+.endSub{font-size:11.5px;font-weight:600;fill:#7A4E3A}
+.footer{font-size:12px;font-weight:600;fill:#D4BDAE}
+.box{stroke:#C58D60;stroke-width:1px;vector-effect:non-scaling-stroke;rx:1;ry:1}
+.line{fill:none;stroke:#C58D60;stroke-width:1px;vector-effect:non-scaling-stroke;stroke-linecap:butt;stroke-linejoin:miter}
+</style>
+<marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0 0L8 4L0 8Z" fill="#C58D60"/></marker>
+</defs>
+<g transform="translate(44 24)">
+  <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAPeklEQVR42uWbW4xdZ3XHf2t9e585c/PM2B57bI89vsd2HF8YcimEnBKichEgKJpKUFSpUAWpiAr60gdUDVLFQyVK8gCopVAJhHioWyilSqAlwNCHJiQTYhMnQzIe328T38Zz5nL23t+3+rDPGY+dsefqxBFbs3VGOufs863bf/3X+tYnLP2l3d3drr+/P339Wz1u412vfhaQm3zXjv1u29fhgL/xje7u7ri/v98DYSkXK0v1oFKpFPX19YXaAru6SsW4eex+n6V/rBr9offei1Cvzu241XOC9wNmTDjnXAjZL10U/yAdbXzm+PG+yZqCS6WS9vX1ZXeKAnS6VbbsvPdub8mXgI1RVHh7CH7qhywX8JYLV+ei2mcBVB1ZljwHHHNS+NKRl589fLPffqMVIJRKjr6+bOvWrXU+avprga2IfkpUMDOC95mIyA2/o7M8d7pAZmamzkUiggUDC/9iMOiy8lcHBwcrlEoRfX1+ms7eAAX09DgO5HG66e79H5LAN0W0A4HgPZhlCALilibAzGMYIpE6BwZm4Zwpjx49/Jsf37im26uA6g+t3rOnsSFx3wM+ICqF4H0KiIhE3MbLzDLA1LnYgiXAE+MF/8nzhw6NLUQJ87GQlkold/yJJ/yWHXsfLVj8NVF92CwoZoiIExHlNl8ioiLiMDPAqYt2FoK+d/mKVVz+1c+fK5VK0fHjx5lrSMh8gW7z9r2f1zh+zCyQI/tSufmCPcI755yIEtL0C0OvHHx8PgCps3t8jwPC5l3dGzbtfNuzOH3M+yyE8OYLX/UIF4L33mcBp49t2vm2Zzfv6t4AhOraF+UBCoQN2+7Z7Fz0K3W6zmfZHSH4Tb0hilzw4bT32UMnXv3t0GyecHNBenu1u1x2xZb2rc5F/60qG3ye1iLu0EtENISQOaetqvrh1pWrntzS1Tly9tFHoa/P5ukBPQ4O+E079v1GXbQvZGnGHSz8Da6QaRRHwWcvHB14YX9NljljQKlUiuCA79q+9/Mibpf3afqWET53hcj7NBVxu7q27/08HPC5THMIgSqnzzZu2/dncV38jz54Ed5Cwk+5tjjDJI7j9y9rWXX04PPP/KaaIsOtFCArV650LS2dbcGFbwIrLQTeiPx+m0IhiIiJ2rbVK9f/K1SSs2fP2s1DoKdH+/v700lLv6Ua3ROC5/Yhvr0RoOhC8KhG90xa+q3+/v6Unh6dUQG9vb3KgQO+a8fej6rqI95nKSzG8obZTHeo3jf+f/29hGpQ77NUVR/p2rH3oxw44Ht7e3XGLLB169Y675rOiWqrWbD51gr5F4x8/Vb9qwpj1SJXZnKE6e9J9UVqVlwSdxNRsRCuOF/uGBwcrFznAd3d3TGAjxo+65xrDiEk8xO+ajW7/jW3pCCiiAqiiqii6qZuUZe/J5qLboYx03MW5RUSQkicc80+avjsdJkjgKamJgMcJntMcGA2N/lvtDZYXhjlt8qsepSq1a+zPkYIRsAg2Ou8YGFeYWqSywi4qsxI1Qtsy5a9u6ygL84t/q4Jnhsnd/QpwUWWEMgNC4FaPIrIosJDRJAk7D5y5OBLgGh3d7cDzEd8UVStWm/PuigAC+RdGhFUFVVdUuFrC1bnUNG8pVYNjamwm2cvQVTNR3wRsO7ubqdNTU22efOeVaK6qfpAmR3Zya1ihqrcFsFfj+WCczl4h2m4ME8liJkhqps2b96zqqmpyQRg487u+yMnT/v05nzfanFuAatyKRe9OUWhhYAPARXNo0HkGpbMoU5wcRxl3h449nL/M5qrJftECDOgzXSXr8V6yDX/Zgmfe4PiVDHzeUgwD/4gIiEEE8s+UUuDAnywhjEzZ/f84SEEEMG5N78dIKqoc1WQtPlkSZkus1YNfOVWaF9DYiAX/jbH+9wBMveEEMIUOM6VM1RlNl29Z0+jCMUZ00/trrq9RndeUTjlCSFcS8lzigSKq/fsadT6in5aXbSrumOjM6kqmKHOTdGUO+1SVRAIIVTBupYqZ/548D5TF+2qr+indaa4n05DQwio5FR1KSo4AVSu3UulUucijGsZao4rvXmjw4AQcl7u3NK4voqQGaRZ7q4iQqwQqVTRfJGESR0heMTc1F7kbPwkmpHiTsV+wC0RyRERxpKMltizo01pLggTSeDYqHGh4mgsRNcqxwV7gSN4T7CA4qpYfeuiNrq+LpYq5akBH8gSpDwRYTJJebAj0LOridWNEZGAD8alicB/vFLmqZMJhUJhkb0AQZ0SvGHOEANDbpm09EbAq6GomUdcTnMX6/bjlZQ/Wh/43Ntb6GwpIObJsgwLgVXNMY/ub+Ejm/PP6aK8zVB1ORZUy+rZEEFvoDtTJa0BOrUFt1DLw6QPbGsJfGB7C0+d8pTLE7Qsb6d13UZa21cxMTHBk0cT3rO1lX0rAhOZLYpmiEheOFm4vmK9hQJsugNQbVVhLNr6gpBlgXd2FojJuDgJmx7+GE+lm/iHZ8d4stzJ+nf/CaMhwqcVHtpQJIRsUelWqhnLQpgLJzCdqAvfDj57SVQjapQnr5gWHfsBaIqM1XUZWdt6PvfFXta8/y/Y9Y6HOXr+Ctvve5C17/tz/upv/w7aN9EapbTEeaZYTP9AVaaV7dPvfFnqXBR89tJEXfi2Gzt/Pm1d0fFpEVljIRhmEnzARW5RnF8FxhKje0XCts521n7oL2nr6KSAZ8/+e9i98y4eec+DjF+5TDlEJKvu4vzA82RjIwxeVeoiWXBOEBG899V16BT9r2YzExGxYCdPv3Toa1r11NZaV6emNRFdcPwLEBCKLvBAu1FYu43du++mrbGOFWvXcWTwOE/95Ce8PDBEa0cnLY1Fdu/cTnHDLu5tDzRGRlgs7xSZ6jjPBIIitFIbYWlZ3rFFRO+zEMwwNQtELl5w/hcgM2gvBv50dxMvnbpMsqwDnPKjf/sh/f/+z6y/eJD+Xz/DC4NnaG5rY+CVI7z48x9zf4fjufMplypKtIgoDD6fqlHNm63TWnVBRASz7125cP7JvB/g7PuqKhDMrMqnF4XE4L2xpsFY3lTHvqYx/umxr3Ll6gSjJ37HPjvOvo0ruNed4cLLv2akXOEbjz/OPXWXWNFYpK2Qs1BZDBCqTMsE01KhmamqmETfh3zsJdIKR73PnhZ1jmAeW1xjMyDEpJQ6YyrBGEmMtpWr2L9vN631MePEnLuaUCZmWdGxd/dO1qzrZHjcM5oG3r0hoigpwRY3xDbVO5wCyODFOee9f1or6dFSqRRpuVyWoaFDw8H8UZna1rBFgJ8wnmT8QYfw9rX1/ODwVX59aoy1ywqMjFzl2MmTvHox5b8GRnj5QsaxY6d47cJF1rcVOXc15emTY2xdHvOutcJ46hdFjK6DMKttkAgWwtGhoUPD5XJZour4qZh3XzYNH0ckWgz58QZNLvCBLfWsaY5pKyobVzbQ1NXA5dFxNhQmeduWFn56dIKHNjXywrlJLo+W2b+6wGqWIYUGYoX3bjb+79w4abWwWVwTscb1JbIQcBlfBqS/v98rEEqlkjt55OCAD+E7qg4LIVuIElQg8cb2NmUs9Rx4cYRjV1L6z07y4qnLJONjHDp1lZ8eGeXIpQr/M1Sm//QYycQ4L568xJODY/znK1f54cBVKllgR5sj8QFdgAZyInQtAMwsqzZOvnPkyMGBUqnkgBABlMtlATIJdggVb2bBgiGRzDMa8vy7uVm4OO4pxMon7mllPEk5nY5z/rULdDQXuL/dsXet0BDlrO3y5St0a3cP3eXx9Ato20RqltMR5plhM/0BVppXt0+98We5r3LL4vOLxm4BxxYH5FATqvI5xB7MxYn2B7V0OlErnJkV1zvuy/G2O7Ym1rUq0q/txoOVfE7vljpI1xE6Xb5xJcb5X6eN7a7Vx1VdKqW5a6B1Pl0Qj+U1fD+6K5FhZxKOwZf7dK0x7sQ0i+rT4m6qVY4LJdMYp7dp44L5Qn4t4K1k2XcJfb4pY4hC8P8Qxk6VEc6F2zp5g+2r2x/CWJkqmy4+oUcsCJvJ8QvS7uQxAOGtkPG4F7Zb5u5YF6GidTd7JviP/6w2g+RYVvjeZOHc83UZxQUBKnLypnS5B6qXwwk3EWoq5j+1gAXkMR5uk0d5pVKEaFb3Mcwvw/xgftNYxFfzZFL8j70GhdpP9Iymn34EKoaEYlUipjvN4Z4A67XjYxR8qV9dgnmRneD3fujP8F9xejF+6f7Xq7fQAAAABJRU5ErkJggg==" x="0" y="0" width="70" height="70"/>
+  <text class="h1" x="88" y="29">WalletWallrus</text>
+  <text class="tag" x="88" y="52">States Proof Layer · Progression, proven. · Thick proof. Thin trust.</text>
+</g>
+<g transform="translate(44 132)">
+  <text class="eyebrow" x="0" y="0">Observed states</text>
+  <g transform="translate(0 22)"><rect class="box" width="180" height="62" fill="#EFE7DB"/><text class="nodeTitle" x="90" y="26" text-anchor="middle">Proposed</text><text class="nodeSub" x="90" y="45" text-anchor="middle">PR · head</text></g>
+  <g transform="translate(0 100)"><rect class="box" width="180" height="62" fill="#EFE7DB"/><text class="nodeTitle" x="90" y="26" text-anchor="middle">Canonical</text><text class="nodeSub" x="90" y="45" text-anchor="middle">SHA · tree</text></g>
+  <g transform="translate(0 178)"><rect class="box" width="180" height="62" fill="#EFE7DB"/><text class="nodeTitle" x="90" y="26" text-anchor="middle">Mirror</text><text class="nodeSub" x="90" y="45" text-anchor="middle">SHA · tree</text></g>
+</g>
+<path class="line" d="M224 185H340" marker-end="url(#arrow)"/>
+<path class="line" d="M224 263H340" marker-end="url(#arrow)"/>
+<path class="line" d="M224 341H340" marker-end="url(#arrow)"/>
+<g transform="translate(355 143)">
+  <polygon class="box" fill="#C96F4A" points="120,0 240,120 120,240 0,120"/>
+  <text class="heroTitle" x="120" y="101" text-anchor="middle">States Proof</text>
+  <text class="heroTitle" x="120" y="131" text-anchor="middle">Layer</text>
+  <text class="heroSub" x="120" y="158" text-anchor="middle">Authority · Hashes · Provenance</text>
+  <text class="heroSub" x="120" y="178" text-anchor="middle">CI · Freshness · Permissions · Invariants</text>
+</g>
+<path class="line" d="M595 263C655 263 645 183 684 183" marker-end="url(#arrow)"/>
+<g transform="translate(684 169)"><rect class="box" width="132" height="28" fill="#5E5A60"/><text class="railText" x="66" y="18" text-anchor="middle">Current proof</text></g>
+<path class="line" d="M816 183H842" marker-end="url(#arrow)"/>
+<g transform="translate(842 151)"><rect class="box" width="164" height="64" fill="#D77E58"/><text class="outTitle" x="82" y="27" text-anchor="middle">Proven progression</text><text class="outSub" x="82" y="46" text-anchor="middle">State may advance</text></g>
+<path class="line" d="M1006 183H1042" marker-end="url(#arrow)"/>
+<g transform="translate(1042 151)"><rect class="box" width="182" height="64" fill="#EFE7DB"/><text class="endTitle" x="91" y="27" text-anchor="middle">Next verified state</text><text class="endSub" x="91" y="46" text-anchor="middle">Proof remains bound</text></g>
+<path class="line" d="M595 263C655 263 645 343 684 343" marker-end="url(#arrow)"/>
+<g transform="translate(684 329)"><rect class="box" width="132" height="28" fill="#5E5A60"/><text class="railText" x="66" y="18" text-anchor="middle">State moved</text></g>
+<path class="line" d="M816 343H842" marker-end="url(#arrow)"/>
+<g transform="translate(842 311)"><rect class="box" width="150" height="64" fill="#A78472"/><text class="outTitle" x="75" y="27" text-anchor="middle">Refuse</text><text class="outSub" x="75" y="46" text-anchor="middle">Proof invalidated</text></g>
+<text class="footer" x="44" y="462">Green on the wrong SHA is still wrong. Access is not authority. If reality moves, proof moves with it.</text>
 </svg>
