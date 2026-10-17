@@ -1,146 +1,97 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1820" height="760" viewBox="0 0 1820 760" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1880" height="720" viewBox="0 0 1880 720" role="img" aria-labelledby="title desc">
   <title id="title">WalletWallrus-Org — States Proof Layer</title>
-  <desc id="desc">Observed WalletWall states pass through the WalletWallrus-Org States Proof Layer. Authority, hashes, provenance, CI, freshness, permissions, and invariants are verified before progression.</desc>
+  <desc id="desc">A transparent-background WalletWall diagram. Proposed, canonical, and mirror states feed into the WalletWallrus-Org States Proof Layer. From there, proof either holds and permits proven progression to the next verified state, or the state moved and the request is refused.</desc>
   <defs>
     <style>
-      :root {
-        --bg:#FFFEF9;
-        --terracotta:#C96F4A;
-        --terracotta-hi:#D77E58;
-        --beige:#EAD9C5;
-        --cream:#F4E7DA;
-        --mocha:#7A4E3A;
-        --ink:#4A342C;
-        --muted:#A97A62;
-        --refuse:#B98C78;
-      }
-      text { font-family: Inter, Manrope, Sora, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
-      .title { font-size:32px; font-weight:800; letter-spacing:.01em; }
-      .subtitle { font-size:17px; font-weight:600; }
-      .label { font-size:18px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
-      .body { font-size:16px; font-weight:600; }
-      .small { font-size:15px; font-weight:600; }
-      .tiny { font-size:13px; font-weight:600; letter-spacing:.06em; text-transform:uppercase; }
-      .box { stroke:var(--mocha); stroke-width:1px; vector-effect:non-scaling-stroke; rx:1px; ry:1px; }
-      .line { fill:none; stroke:#9A6A55; stroke-width:1px; vector-effect:non-scaling-stroke; stroke-linecap:butt; stroke-linejoin:miter; }
+      text { font-family: Inter, Manrope, Sora, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; }
+      .title { font-size: 34px; font-weight: 800; fill: #F7F1E8; }
+      .subtitle { font-size: 16px; font-weight: 600; fill: #D2BFA9; }
+      .smallcap { font-size: 14px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; fill: #F7F1E8; }
+      .boxTitle { font-size: 16px; font-weight: 700; fill: #4A342C; }
+      .boxSub { font-size: 14px; font-weight: 600; fill: #7A4E3A; }
+      .creamTitle { font-size: 16px; font-weight: 700; fill: #FAF6EF; }
+      .creamSub { font-size: 14px; font-weight: 600; fill: #F9E7DA; }
+      .railText { font-size: 13px; font-weight: 700; text-transform: uppercase; fill: #FAF6EF; }
+      .footer { font-size: 15px; font-weight: 600; fill: #D2BFA9; }
+      .stroke { stroke: #C58D60; stroke-width: 1; vector-effect: non-scaling-stroke; fill: none; stroke-linecap: butt; stroke-linejoin: miter; }
+      .box { stroke: #C58D60; stroke-width: 1; vector-effect: non-scaling-stroke; rx: 1; ry: 1; }
     </style>
     <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth">
-      <path d="M0 0L8 4L0 8Z" fill="#9A6A55"/>
+      <path d="M0 0L8 4L0 8Z" fill="#C58D60"/>
     </marker>
-    <pattern id="brickPattern" x="0" y="0" width="88" height="54" patternUnits="userSpaceOnUse">
-      <rect width="88" height="54" fill="none"/>
-      <path d="M0 27.5H88 M0 .5H88 M0 53.5H88 M44 0V27 M0 27V54 M88 27V54" stroke="#E6A485" stroke-opacity=".25" stroke-width="1" vector-effect="non-scaling-stroke" fill="none"/>
-    </pattern>
   </defs>
 
-  <rect width="1820" height="760" fill="#FFFEF9"/>
-
-  <g transform="translate(72 46)">
-    <text class="title" fill="#4A342C">WalletWallrus-Org</text>
-    <text class="subtitle" y="34" fill="#7A4E3A">States Proof Layer · Progression, proven. · Thick proof. Thin trust.</text>
+  <g transform="translate(74 40)">
+    <image href="data:image/png;base64,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" x="0" y="0" width="84" height="84"/>
+    <text class="title" x="108" y="32">WalletWallrus-Org</text>
+    <text class="subtitle" x="108" y="58">States Proof Layer · Progression, proven. · Thick proof. Thin trust.</text>
   </g>
 
-  <g transform="translate(82 126)">
-    <rect width="256" height="498" fill="#EAD9C5" class="box"/>
-    <text class="label" x="24" y="34" fill="#7A4E3A">Observed states</text>
-
-    <g transform="translate(24 68)">
-      <rect width="208" height="96" fill="#FFFEF9" class="box"/>
-      <text class="body" x="104" y="38" text-anchor="middle" fill="#4A342C">Proposed</text>
-      <text class="small" x="104" y="62" text-anchor="middle" fill="#7A4E3A">PR · head</text>
+  <g transform="translate(90 170)">
+    <text class="smallcap" x="0" y="0">Observed states</text>
+    <g transform="translate(0 28)">
+      <rect class="box" width="230" height="84" fill="#EFE7DB"/>
+      <text class="boxTitle" x="115" y="32" text-anchor="middle">Proposed</text>
+      <text class="boxSub" x="115" y="56" text-anchor="middle">PR · head</text>
     </g>
-
-    <g transform="translate(24 196)">
-      <rect width="208" height="96" fill="#FFFEF9" class="box"/>
-      <text class="body" x="104" y="38" text-anchor="middle" fill="#4A342C">Canonical</text>
-      <text class="small" x="104" y="62" text-anchor="middle" fill="#7A4E3A">SHA · tree</text>
+    <g transform="translate(0 148)">
+      <rect class="box" width="230" height="84" fill="#EFE7DB"/>
+      <text class="boxTitle" x="115" y="32" text-anchor="middle">Canonical</text>
+      <text class="boxSub" x="115" y="56" text-anchor="middle">SHA · tree</text>
     </g>
-
-    <g transform="translate(24 324)">
-      <rect width="208" height="96" fill="#FFFEF9" class="box"/>
-      <text class="body" x="104" y="38" text-anchor="middle" fill="#4A342C">Mirror</text>
-      <text class="small" x="104" y="62" text-anchor="middle" fill="#7A4E3A">SHA · tree</text>
-    </g>
-
-    <text class="tiny" x="24" y="462" fill="#A97A62">Incoming coordinates</text>
-    <text class="small" x="24" y="486" fill="#7A4E3A">Each observed state is a candidate input.</text>
-  </g>
-
-  <g transform="translate(410 126)">
-    <rect width="486" height="498" fill="#C96F4A" class="box"/>
-    <rect width="486" height="498" fill="url(#brickPattern)" opacity=".36" rx="1" ry="1"/>
-
-    <text class="title" x="243" y="48" text-anchor="middle" fill="#FFFEF9" style="font-size:28px">States Proof Layer</text>
-    <text class="tiny" x="243" y="76" text-anchor="middle" fill="#F8DED2">Verification boundary between observed state and allowed change</text>
-
-    <g transform="translate(34 112)">
-      <rect width="418" height="96" fill="#F4E7DA" class="box"/>
-      <text class="body" x="209" y="38" text-anchor="middle" fill="#4A342C">Authority · Hashes · Provenance</text>
-      <text class="small" x="209" y="64" text-anchor="middle" fill="#7A4E3A">Who defines the state, what it is, and how it was measured.</text>
-    </g>
-
-    <g transform="translate(34 232)">
-      <rect width="418" height="96" fill="#F4E7DA" class="box"/>
-      <text class="body" x="209" y="38" text-anchor="middle" fill="#4A342C">CI · Freshness</text>
-      <text class="small" x="209" y="64" text-anchor="middle" fill="#7A4E3A">Checks must be green for this exact state, not a prior one.</text>
-    </g>
-
-    <g transform="translate(34 352)">
-      <rect width="418" height="96" fill="#F4E7DA" class="box"/>
-      <text class="body" x="209" y="38" text-anchor="middle" fill="#4A342C">Permissions · Invariants</text>
-      <text class="small" x="209" y="64" text-anchor="middle" fill="#7A4E3A">Progression must remain authorized, coherent, and within bounds.</text>
+    <g transform="translate(0 268)">
+      <rect class="box" width="230" height="84" fill="#EFE7DB"/>
+      <text class="boxTitle" x="115" y="32" text-anchor="middle">Mirror</text>
+      <text class="boxSub" x="115" y="56" text-anchor="middle">SHA · tree</text>
     </g>
   </g>
 
-  <g class="line" marker-end="url(#arrow)">
-    <path d="M338 242H390"/>
-    <path d="M338 370H390"/>
-    <path d="M338 498H390"/>
+  <g transform="translate(470 210)">
+    <polygon class="box" fill="#C96F4A" points="180,0 360,180 180,360 0,180"/>
+    <text class="creamTitle" x="180" y="136" text-anchor="middle" style="font-size:28px; font-weight:800;">States Proof</text>
+    <text class="creamTitle" x="180" y="172" text-anchor="middle" style="font-size:28px; font-weight:800;">Layer</text>
+    <text class="creamSub" x="180" y="214" text-anchor="middle">Authority · Hashes · Provenance</text>
+    <text class="creamSub" x="180" y="238" text-anchor="middle">CI · Freshness · Permissions · Invariants</text>
   </g>
 
-  <path d="M896 375H932" class="line" marker-end="url(#arrow)"/>
+  <path class="stroke" d="M320 240H448" marker-end="url(#arrow)"/>
+  <path class="stroke" d="M320 360H448" marker-end="url(#arrow)"/>
+  <path class="stroke" d="M320 480H448" marker-end="url(#arrow)"/>
 
-  <g transform="translate(932 296)">
-    <rect width="166" height="132" fill="#F4E7DA" class="box"/>
-    <text class="body" x="83" y="48" text-anchor="middle" fill="#4A342C">Proof</text>
-    <text class="body" x="83" y="72" text-anchor="middle" fill="#4A342C">holds?</text>
-    <text class="tiny" x="83" y="102" text-anchor="middle" fill="#A97A62">Current state only</text>
+  <g transform="translate(920 178)">
+    <rect class="box" width="164" height="34" fill="#5E5A60"/>
+    <text class="railText" x="82" y="22" text-anchor="middle">Current proof</text>
   </g>
+  <path class="stroke" d="M830 390C900 390 875 195 920 195" marker-end="url(#arrow)"/>
 
-  <path d="M1098 362C1118 362 1114 264 1134 264" class="line" marker-end="url(#arrow)"/>
-  <g transform="translate(1134 246)">
-    <rect width="56" height="36" fill="#D77E58" class="box"/>
-    <text class="small" x="28" y="24" text-anchor="middle" fill="#FFFEF9">YES</text>
+  <g transform="translate(1114 154)">
+    <rect class="box" width="192" height="88" fill="#D77E58"/>
+    <text class="creamTitle" x="96" y="35" text-anchor="middle">Proven progression</text>
+    <text class="creamSub" x="96" y="60" text-anchor="middle">State may advance</text>
   </g>
-  <path d="M1190 264H1210" class="line" marker-end="url(#arrow)"/>
+  <path class="stroke" d="M1084 195H1114" marker-end="url(#arrow)"/>
 
-  <g transform="translate(1210 206)">
-    <rect width="236" height="108" fill="#D77E58" class="box"/>
-    <text class="body" x="118" y="44" text-anchor="middle" fill="#FFFEF9">Proven progression</text>
-    <text class="small" x="118" y="70" text-anchor="middle" fill="#F8DED2">Admissible state advancement</text>
+  <g transform="translate(1414 154)">
+    <rect class="box" width="234" height="88" fill="#EFE7DB"/>
+    <text class="boxTitle" x="117" y="35" text-anchor="middle">Next verified state</text>
+    <text class="boxSub" x="117" y="60" text-anchor="middle">Proof remains bound</text>
   </g>
+  <path class="stroke" d="M1306 195H1414" marker-end="url(#arrow)"/>
 
-  <path d="M1446 260H1490" class="line" marker-end="url(#arrow)"/>
-  <g transform="translate(1490 206)">
-    <rect width="208" height="108" fill="#FFFEF9" class="box"/>
-    <text class="body" x="104" y="44" text-anchor="middle" fill="#4A342C">Next verified state</text>
-    <text class="small" x="104" y="70" text-anchor="middle" fill="#7A4E3A">Bound to the same proof</text>
+  <g transform="translate(920 514)">
+    <rect class="box" width="164" height="34" fill="#5E5A60"/>
+    <text class="railText" x="82" y="22" text-anchor="middle">State moved</text>
   </g>
+  <path class="stroke" d="M830 390C900 390 875 531 920 531" marker-end="url(#arrow)"/>
 
-  <path d="M1098 362C1116 362 1112 464 1134 464" class="line" marker-end="url(#arrow)"/>
-  <g transform="translate(1134 446)">
-    <rect width="48" height="36" fill="#EAD9C5" class="box"/>
-    <text class="small" x="24" y="24" text-anchor="middle" fill="#4A342C">NO</text>
+  <g transform="translate(1114 490)">
+    <rect class="box" width="176" height="88" fill="#A78472"/>
+    <text class="creamTitle" x="88" y="35" text-anchor="middle">Refuse</text>
+    <text class="creamSub" x="88" y="60" text-anchor="middle">Proof invalidated</text>
   </g>
-  <path d="M1182 464H1210" class="line" marker-end="url(#arrow)"/>
+  <path class="stroke" d="M1084 531H1114" marker-end="url(#arrow)"/>
 
-  <g transform="translate(1210 404)">
-    <rect width="220" height="108" fill="#B98C78" class="box"/>
-    <text class="body" x="110" y="44" text-anchor="middle" fill="#FFFEF9">Refuse</text>
-    <text class="small" x="110" y="70" text-anchor="middle" fill="#FFF3EA">State moved · proof invalidated</text>
-  </g>
-
-  <g transform="translate(82 678)">
-    <text class="small" fill="#7A4E3A">Observed state is not assumed state. Access is not authority. No proof, no progression.</text>
+  <g transform="translate(90 654)">
+    <text class="footer">Green on the wrong SHA is still wrong. Access is not authority. If reality moves, proof moves with it.</text>
   </g>
 </svg>
